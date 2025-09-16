@@ -114,21 +114,17 @@ class ZaloChecker:
             return False
     
     def check_phone_number(self, phone: str) -> Dict:
-        """Kiểm tra một số điện thoại - phiên bản tối ưu với modal"""
         try:
             logger.info(f"Đang kiểm tra số: {phone}")
-            
-            # 1. Click nút Thêm bạn bằng JS
+
+            # Các bước click và nhập số điện thoại tương tự
             if not self.js_click("[data-id='btn_Main_AddFrd']"):
                 return {"phone": phone, "status": "Error", "name": "Cannot click add friend"}
             
             self.random_delay(0.5, 1.0)
             
-            # 2. Nhập số điện thoại
             try:
-                phone_input = self.wait.until(
-                    EC.visibility_of_element_located((By.CSS_SELECTOR, "[data-id='txt_Main_AddFrd_Phone']"))
-                )
+                phone_input = self.wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, "[data-id='txt_Main_AddFrd_Phone']")))
                 phone_input.clear()
                 phone_input.send_keys(str(phone))
             except:
@@ -136,63 +132,54 @@ class ZaloChecker:
             
             self.random_delay(0.3, 0.7)
             
-            # 3. Click nút Tìm kiếm bằng JS
             if not self.js_click("[data-id='btn_Main_AddFrd_Search']"):
                 return {"phone": phone, "status": "Error", "name": "Cannot click search"}
+
+            # Logic kiểm tra tối ưu với timeout ngắn
+            timeout_seconds = 1 # Giới hạn thời gian chờ tối đa
+            start_time = time.time()
             
-            # 4. Chờ kết quả - KIỂM TRA MODAL THÔNG TIN TÀI KHOẢN
             result = None
-            modal_appeared = False
-            
-            # Chờ tối đa 5 giây để modal xuất hiện
-            for _ in range(10):
+            while time.time() - start_time < timeout_seconds:
                 try:
-                    # Kiểm tra modal thông tin tài khoản có xuất hiện không
-                    modal_elements = self.driver.find_elements(
-                        By.CSS_SELECTOR, '.zl-modal__dialog, [class*="modal"], [title*="Thông tin tài khoản"]'
-                    )
-                    
-                    if modal_elements and any(el.is_displayed() for el in modal_elements):
-                        modal_appeared = True
-                        logger.info("Modal thông tin tài khoản đã xuất hiện - Số CÓ Zalo")
-                        
-                        # Lấy thông tin từ modal
-                        result = self.extract_info_from_modal(phone)
+                    # Tìm kiếm modal thông tin tài khoản
+                    modal_elements = self.driver.find_elements(By.CSS_SELECTOR, '.zl-modal__dialog span[title="Thông tin tài khoản"]')
+                    if modal_elements and modal_elements[0].is_displayed():
+                        # Nếu thấy modal, xử lý và thoát
+                        name_element = self.driver.find_element(By.CSS_SELECTOR, '.pi-mini-info-section__name .truncate')
+                        name = name_element.get_attribute("title") or name_element.text
+                        result = {"phone": phone, "status": "Có Zalo", "name": name.strip()}
+                        logger.info(f"Đã tìm thấy Zalo - Tên: {name.strip()}")
                         break
-                    
-                    # Kiểm tra thông báo lỗi
-                    error_elements = self.driver.find_elements(
-                        By.CSS_SELECTOR, '.error-message, .no-result, [class*="error"]'
-                    )
-                    if error_elements and any('không tồn tại' in el.text for el in error_elements if el.is_displayed()):
-                        logger.info("Thông báo lỗi xuất hiện - Số KHÔNG có Zalo")
+
+                    # Tìm kiếm thông báo lỗi "không tồn tại"
+                    error_elements = self.driver.find_elements(By.CSS_SELECTOR, '.no-result')
+                    if error_elements and error_elements[0].is_displayed() and "không tồn tại" in error_elements[0].text:
+                        # Nếu thấy lỗi, xử lý và thoát
                         result = {"phone": phone, "status": "Không có Zalo", "name": ""}
+                        logger.info("Đã tìm thấy thông báo lỗi - Số KHÔNG có Zalo")
                         break
                         
-                except:
-                    pass
-                
+                except StaleElementReferenceException:
+                    # Bỏ qua lỗi này nếu DOM thay đổi
+                    continue
+                    
                 time.sleep(0.5)
-            
-            # Nếu không phát hiện modal sau 5 giây, coi như không có Zalo
+
+            # Nếu vòng lặp kết thúc mà không có kết quả
             if result is None:
-                if not modal_appeared:
-                    logger.info("Không thấy modal thông tin - Số KHÔNG có Zalo")
-                    result = {"phone": phone, "status": "Không có Zalo", "name": ""}
-                else:
-                    result = {"phone": phone, "status": "Unknown", "name": "Cần kiểm tra thủ công"}
-            
-            logger.info(f"Kết quả: {phone} - {result['status']}")
+                logger.warning(f"Timeout (5s) - Không tìm thấy kết quả rõ ràng cho số: {phone}")
+                result = {"phone": phone, "status": "Không có Zalo", "name": "Timeout"}
+
             return result
             
         except Exception as e:
             logger.error(f"Lỗi khi kiểm tra {phone}: {e}")
             return {"phone": phone, "status": "Error", "name": str(e)}
         finally:
-            # 5. ĐÓNG MODAL THAY VÌ RELOAD TRANG
             self.close_modal()
             self.random_delay(0.5, 1.0)
-    
+            
     def extract_info_from_modal(self, phone: str) -> Dict:
         """Trích xuất thông tin từ modal thông tin tài khoản"""
         try:
@@ -248,11 +235,11 @@ class ZaloChecker:
                     self.save_results(results, f"zalo_results_batch_{i//batch_size}.csv")
                     logger.info(f"Đã xử lý {i}/{len(phone_numbers)} số")
                     
-                # Nghỉ ngơi ngẫu nhiên sau mỗi 10-20 số
-                if i % random.randint(10, 20) == 0:
-                    rest_time = random.randint(10, 20)
-                    logger.info(f"Nghỉ {rest_time} giây...")
-                    time.sleep(rest_time)
+                # # Nghỉ ngơi ngẫu nhiên sau mỗi 10-20 số
+                # if i % random.randint(10, 20) == 0:
+                #     rest_time = random.randint(10, 20)
+                #     logger.info(f"Nghỉ {rest_time} giây...")
+                #     time.sleep(rest_time)
                     
             except Exception as e:
                 logger.error(f"Lỗi nghiêm trọng với số {phone}: {e}")
