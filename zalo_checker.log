@@ -1,1 +1,411 @@
 2025-09-16 14:49:53,954 - ERROR - Lỗi khi đọc file: [Errno 2] No such file or directory: 'numbers.csv'
+2025-09-16 17:18:32,875 - ERROR - Lỗi khi đọc file: [Errno 2] No such file or directory: 'numbers.csv'
+2025-09-16 17:19:31,522 - INFO - Đã đọc 3 số từ file
+2025-09-16 17:19:33,241 - INFO - Đang chờ đăng nhập...
+2025-09-16 17:19:48,264 - WARNING - Có vẻ như chưa đăng nhập thành công
+2025-09-16 17:20:13,773 - INFO - Đang kiểm tra số: 397364664
+2025-09-16 17:20:24,213 - INFO - Kết quả: 397364664 - Có Zalo
+2025-09-16 17:20:25,685 - INFO - Đang kiểm tra số: 999978742
+2025-09-16 17:20:26,748 - WARNING - Không thể click [data-id='btn_Main_AddFrd']: Message: element click intercepted: Element <div icon="outline-add-new-contact-2" data-id="btn_Main_AddFrd" class="z--btn--v2 btn-tertiary-neutral medium  --rounded icon-only" data-disabled="" data-translate-title="STR_CONTACT_ADD_FRIEND" title="Thêm bạn">...</div> is not clickable at point (340, 64). Other element would receive the click: <div id="" class="zl-modal__container flx-1 flx flx-center flx-al-c ovf-hidden">...</div>
+  (Session info: chrome=140.0.7339.82); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff632eefc95+79861]
+	GetHandleVerifier [0x0x7ff632eefcf0+79952]
+	(No symbol) [0x0x7ff632c6cada]
+	(No symbol) [0x0x7ff632ccc5d9]
+	(No symbol) [0x0x7ff632cc9f5e]
+	(No symbol) [0x0x7ff632cc6eb1]
+	(No symbol) [0x0x7ff632cc5da0]
+	(No symbol) [0x0x7ff632cb7338]
+	(No symbol) [0x0x7ff632cecada]
+	(No symbol) [0x0x7ff632cb6bc6]
+	(No symbol) [0x0x7ff632ceccf0]
+	(No symbol) [0x0x7ff632d14f8b]
+	(No symbol) [0x0x7ff632cec8b3]
+	(No symbol) [0x0x7ff632cb5272]
+	(No symbol) [0x0x7ff632cb6043]
+	GetHandleVerifier [0x0x7ff6331ab9cd+2946349]
+	GetHandleVerifier [0x0x7ff6331a5c4a+2922410]
+	GetHandleVerifier [0x0x7ff6331c59d7+3052855]
+	GetHandleVerifier [0x0x7ff632f0aa7e+189918]
+	GetHandleVerifier [0x0x7ff632f12a1f+222591]
+	GetHandleVerifier [0x0x7ff632ef8ab4+116244]
+	GetHandleVerifier [0x0x7ff632ef8c69+116681]
+	GetHandleVerifier [0x0x7ff632edf048+11176]
+	BaseThreadInitThunk [0x0x7ffa01d37374+20]
+	RtlUserThreadStart [0x0x7ffa01e7cc91+33]
+
+2025-09-16 17:20:29,789 - INFO - Đang kiểm tra số: 978786641
+2025-09-16 17:20:38,601 - INFO - Kết quả: 978786641 - Có Zalo
+2025-09-16 17:20:40,658 - INFO - Đã lưu kết quả vào zalo_results_final.csv
+2025-09-16 17:20:40,663 - INFO - 
+=== THỐNG KÊ ===
+status
+Có Zalo    2
+Error      1
+Name: count, dtype: int64
+2025-09-16 17:20:42,767 - INFO - Đã đóng trình duyệt
+2025-09-16 17:25:30,685 - INFO - Đã đọc 3 số từ file
+2025-09-16 17:25:31,957 - INFO - Đang chờ đăng nhập...
+2025-09-16 17:25:47,084 - WARNING - Có vẻ như chưa đăng nhập thành công
+2025-09-16 17:25:49,770 - INFO - Đang kiểm tra số: 397364664
+2025-09-16 17:25:55,032 - INFO - Kết quả: 397364664 - Có Zalo
+2025-09-16 17:25:56,534 - INFO - Đang kiểm tra số: 999978742
+2025-09-16 17:25:57,638 - WARNING - Không thể click [data-id='btn_Main_AddFrd']: Message: element click intercepted: Element <div icon="outline-add-new-contact-2" data-id="btn_Main_AddFrd" class="z--btn--v2 btn-tertiary-neutral medium  --rounded icon-only" data-disabled="" data-translate-title="STR_CONTACT_ADD_FRIEND" title="Thêm bạn">...</div> is not clickable at point (340, 64). Other element would receive the click: <div id="" class="zl-modal__container flx-1 flx flx-center flx-al-c ovf-hidden">...</div>
+  (Session info: chrome=140.0.7339.82); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff632eefc95+79861]
+	GetHandleVerifier [0x0x7ff632eefcf0+79952]
+	(No symbol) [0x0x7ff632c6cada]
+	(No symbol) [0x0x7ff632ccc5d9]
+	(No symbol) [0x0x7ff632cc9f5e]
+	(No symbol) [0x0x7ff632cc6eb1]
+	(No symbol) [0x0x7ff632cc5da0]
+	(No symbol) [0x0x7ff632cb7338]
+	(No symbol) [0x0x7ff632cecada]
+	(No symbol) [0x0x7ff632cb6bc6]
+	(No symbol) [0x0x7ff632ceccf0]
+	(No symbol) [0x0x7ff632d14f8b]
+	(No symbol) [0x0x7ff632cec8b3]
+	(No symbol) [0x0x7ff632cb5272]
+	(No symbol) [0x0x7ff632cb6043]
+	GetHandleVerifier [0x0x7ff6331ab9cd+2946349]
+	GetHandleVerifier [0x0x7ff6331a5c4a+2922410]
+	GetHandleVerifier [0x0x7ff6331c59d7+3052855]
+	GetHandleVerifier [0x0x7ff632f0aa7e+189918]
+	GetHandleVerifier [0x0x7ff632f12a1f+222591]
+	GetHandleVerifier [0x0x7ff632ef8ab4+116244]
+	GetHandleVerifier [0x0x7ff632ef8c69+116681]
+	GetHandleVerifier [0x0x7ff632edf048+11176]
+	BaseThreadInitThunk [0x0x7ffa01d37374+20]
+	RtlUserThreadStart [0x0x7ffa01e7cc91+33]
+
+2025-09-16 17:25:58,959 - INFO - Đang kiểm tra số: 978786641
+2025-09-16 17:26:05,259 - INFO - Kết quả: 978786641 - Có Zalo
+2025-09-16 17:26:08,256 - INFO - Đã lưu kết quả vào zalo_results_final.csv
+2025-09-16 17:26:08,257 - INFO - 
+=== THỐNG KÊ ===
+status
+Có Zalo    2
+Error      1
+Name: count, dtype: int64
+2025-09-16 17:26:10,378 - INFO - Đã đóng trình duyệt
+2025-09-16 17:26:48,100 - INFO - Đã đọc 4 số từ file
+2025-09-16 17:26:49,269 - INFO - Đang chờ đăng nhập...
+2025-09-16 17:27:04,399 - WARNING - Có vẻ như chưa đăng nhập thành công
+2025-09-16 17:27:09,790 - INFO - Đang kiểm tra số: 397364664
+2025-09-16 17:27:16,178 - INFO - Kết quả: 397364664 - Có Zalo
+2025-09-16 17:27:18,467 - INFO - Đang kiểm tra số: 347441103
+2025-09-16 17:27:19,517 - WARNING - Không thể click [data-id='btn_Main_AddFrd']: Message: element click intercepted: Element <div icon="outline-add-new-contact-2" data-id="btn_Main_AddFrd" class="z--btn--v2 btn-tertiary-neutral medium  --rounded icon-only" data-disabled="" data-translate-title="STR_CONTACT_ADD_FRIEND" title="Thêm bạn">...</div> is not clickable at point (340, 64). Other element would receive the click: <div id="" class="zl-modal__container flx-1 flx flx-center flx-al-c ovf-hidden">...</div>
+  (Session info: chrome=140.0.7339.82); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff632eefc95+79861]
+	GetHandleVerifier [0x0x7ff632eefcf0+79952]
+	(No symbol) [0x0x7ff632c6cada]
+	(No symbol) [0x0x7ff632ccc5d9]
+	(No symbol) [0x0x7ff632cc9f5e]
+	(No symbol) [0x0x7ff632cc6eb1]
+	(No symbol) [0x0x7ff632cc5da0]
+	(No symbol) [0x0x7ff632cb7338]
+	(No symbol) [0x0x7ff632cecada]
+	(No symbol) [0x0x7ff632cb6bc6]
+	(No symbol) [0x0x7ff632ceccf0]
+	(No symbol) [0x0x7ff632d14f8b]
+	(No symbol) [0x0x7ff632cec8b3]
+	(No symbol) [0x0x7ff632cb5272]
+	(No symbol) [0x0x7ff632cb6043]
+	GetHandleVerifier [0x0x7ff6331ab9cd+2946349]
+	GetHandleVerifier [0x0x7ff6331a5c4a+2922410]
+	GetHandleVerifier [0x0x7ff6331c59d7+3052855]
+	GetHandleVerifier [0x0x7ff632f0aa7e+189918]
+	GetHandleVerifier [0x0x7ff632f12a1f+222591]
+	GetHandleVerifier [0x0x7ff632ef8ab4+116244]
+	GetHandleVerifier [0x0x7ff632ef8c69+116681]
+	GetHandleVerifier [0x0x7ff632edf048+11176]
+	BaseThreadInitThunk [0x0x7ffa01d37374+20]
+	RtlUserThreadStart [0x0x7ffa01e7cc91+33]
+
+2025-09-16 17:27:22,509 - INFO - Đang kiểm tra số: 999978742
+2025-09-16 17:27:29,269 - INFO - Kết quả: 999978742 - Có Zalo
+2025-09-16 17:27:30,663 - INFO - Đang kiểm tra số: 978786641
+2025-09-16 17:27:31,723 - WARNING - Không thể click [data-id='btn_Main_AddFrd']: Message: element click intercepted: Element <div icon="outline-add-new-contact-2" data-id="btn_Main_AddFrd" class="z--btn--v2 btn-tertiary-neutral medium  --rounded icon-only" data-disabled="" data-translate-title="STR_CONTACT_ADD_FRIEND" title="Thêm bạn">...</div> is not clickable at point (340, 64). Other element would receive the click: <div id="" class="zl-modal__container flx-1 flx flx-center flx-al-c ovf-hidden">...</div>
+  (Session info: chrome=140.0.7339.82); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff632eefc95+79861]
+	GetHandleVerifier [0x0x7ff632eefcf0+79952]
+	(No symbol) [0x0x7ff632c6cada]
+	(No symbol) [0x0x7ff632ccc5d9]
+	(No symbol) [0x0x7ff632cc9f5e]
+	(No symbol) [0x0x7ff632cc6eb1]
+	(No symbol) [0x0x7ff632cc5da0]
+	(No symbol) [0x0x7ff632cb7338]
+	(No symbol) [0x0x7ff632cecada]
+	(No symbol) [0x0x7ff632cb6bc6]
+	(No symbol) [0x0x7ff632ceccf0]
+	(No symbol) [0x0x7ff632d14f8b]
+	(No symbol) [0x0x7ff632cec8b3]
+	(No symbol) [0x0x7ff632cb5272]
+	(No symbol) [0x0x7ff632cb6043]
+	GetHandleVerifier [0x0x7ff6331ab9cd+2946349]
+	GetHandleVerifier [0x0x7ff6331a5c4a+2922410]
+	GetHandleVerifier [0x0x7ff6331c59d7+3052855]
+	GetHandleVerifier [0x0x7ff632f0aa7e+189918]
+	GetHandleVerifier [0x0x7ff632f12a1f+222591]
+	GetHandleVerifier [0x0x7ff632ef8ab4+116244]
+	GetHandleVerifier [0x0x7ff632ef8c69+116681]
+	GetHandleVerifier [0x0x7ff632edf048+11176]
+	BaseThreadInitThunk [0x0x7ffa01d37374+20]
+	RtlUserThreadStart [0x0x7ffa01e7cc91+33]
+
+2025-09-16 17:27:34,429 - INFO - Đã lưu kết quả vào zalo_results_final.csv
+2025-09-16 17:27:34,431 - INFO - 
+=== THỐNG KÊ ===
+status
+Có Zalo    2
+Error      2
+Name: count, dtype: int64
+2025-09-16 17:27:36,557 - INFO - Đã đóng trình duyệt
+2025-09-16 17:28:35,012 - INFO - Đã đọc 4 số từ file
+2025-09-16 17:28:36,240 - INFO - Đang chờ đăng nhập...
+2025-09-16 17:28:51,548 - WARNING - Có vẻ như chưa đăng nhập thành công
+2025-09-16 17:29:05,394 - INFO - Đang kiểm tra số: 397364664
+2025-09-16 17:29:12,592 - INFO - Kết quả: 397364664 - Có Zalo
+2025-09-16 17:29:14,469 - INFO - Đang kiểm tra số: 347441103
+2025-09-16 17:29:15,516 - WARNING - Không thể click [data-id='btn_Main_AddFrd']: Message: element click intercepted: Element <div icon="outline-add-new-contact-2" data-id="btn_Main_AddFrd" class="z--btn--v2 btn-tertiary-neutral medium  --rounded icon-only" data-disabled="" data-translate-title="STR_CONTACT_ADD_FRIEND" title="Thêm bạn">...</div> is not clickable at point (340, 64). Other element would receive the click: <div id="" class="zl-modal__container flx-1 flx flx-center flx-al-c ovf-hidden">...</div>
+  (Session info: chrome=140.0.7339.82); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff632eefc95+79861]
+	GetHandleVerifier [0x0x7ff632eefcf0+79952]
+	(No symbol) [0x0x7ff632c6cada]
+	(No symbol) [0x0x7ff632ccc5d9]
+	(No symbol) [0x0x7ff632cc9f5e]
+	(No symbol) [0x0x7ff632cc6eb1]
+	(No symbol) [0x0x7ff632cc5da0]
+	(No symbol) [0x0x7ff632cb7338]
+	(No symbol) [0x0x7ff632cecada]
+	(No symbol) [0x0x7ff632cb6bc6]
+	(No symbol) [0x0x7ff632ceccf0]
+	(No symbol) [0x0x7ff632d14f8b]
+	(No symbol) [0x0x7ff632cec8b3]
+	(No symbol) [0x0x7ff632cb5272]
+	(No symbol) [0x0x7ff632cb6043]
+	GetHandleVerifier [0x0x7ff6331ab9cd+2946349]
+	GetHandleVerifier [0x0x7ff6331a5c4a+2922410]
+	GetHandleVerifier [0x0x7ff6331c59d7+3052855]
+	GetHandleVerifier [0x0x7ff632f0aa7e+189918]
+	GetHandleVerifier [0x0x7ff632f12a1f+222591]
+	GetHandleVerifier [0x0x7ff632ef8ab4+116244]
+	GetHandleVerifier [0x0x7ff632ef8c69+116681]
+	GetHandleVerifier [0x0x7ff632edf048+11176]
+	BaseThreadInitThunk [0x0x7ffa01d37374+20]
+	RtlUserThreadStart [0x0x7ffa01e7cc91+33]
+
+2025-09-16 17:29:16,936 - INFO - Đang kiểm tra số: 999978742
+2025-09-16 17:29:22,888 - INFO - Kết quả: 999978742 - Có Zalo
+2025-09-16 17:29:24,719 - INFO - Đang kiểm tra số: 978786641
+2025-09-16 17:29:29,444 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000259080063D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/e123490f38ce3136f850ca5ecb5952be/execute/sync
+2025-09-16 17:29:33,536 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000025908006DD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/e123490f38ce3136f850ca5ecb5952be/execute/sync
+2025-09-16 17:29:37,604 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000025908007850>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/e123490f38ce3136f850ca5ecb5952be/execute/sync
+2025-09-16 17:29:45,741 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000025908019390>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/e123490f38ce3136f850ca5ecb5952be/url
+2025-09-16 17:29:49,785 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000025908019F50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/e123490f38ce3136f850ca5ecb5952be/url
+2025-09-16 17:29:53,841 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002590801AAD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/e123490f38ce3136f850ca5ecb5952be/url
+2025-09-16 17:29:57,889 - INFO - Đã dừng bởi người dùng
+2025-09-16 17:30:01,935 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002590801BF90>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/e123490f38ce3136f850ca5ecb5952be
+2025-09-16 17:30:06,004 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002590801C850>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/e123490f38ce3136f850ca5ecb5952be
+2025-09-16 17:30:10,057 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000025908019310>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/e123490f38ce3136f850ca5ecb5952be
+2025-09-16 17:30:14,143 - INFO - Đã đóng trình duyệt
+2025-09-16 17:33:57,745 - INFO - Đã đọc 4 số từ file
+2025-09-16 17:33:58,968 - INFO - Đang chờ đăng nhập...
+2025-09-16 17:34:14,214 - WARNING - Có vẻ như chưa đăng nhập thành công
+2025-09-16 17:34:28,411 - INFO - Đang kiểm tra số: 0397364664
+2025-09-16 17:34:40,664 - INFO - Kết quả: 0397364664 - Có Zalo
+2025-09-16 17:34:42,656 - INFO - Đang kiểm tra số: 0347441103
+2025-09-16 17:34:45,281 - WARNING - Click bị intercepted, thử click bằng JavaScript: [data-id='btn_Main_AddFrd']
+2025-09-16 17:35:03,322 - INFO - Đang kiểm tra số: 0999978742
+2025-09-16 17:35:15,704 - INFO - Kết quả: 0999978742 - Không có Zalo
+2025-09-16 17:35:16,830 - INFO - Đang kiểm tra số: 0978786641
+2025-09-16 17:35:19,197 - WARNING - Click bị intercepted, thử click bằng JavaScript: [data-id='btn_Main_AddFrd']
+2025-09-16 17:35:37,103 - INFO - Đã lưu kết quả vào zalo_results_final.csv
+2025-09-16 17:35:37,104 - INFO - 
+=== THỐNG KÊ ===
+status
+Error            2
+Có Zalo          1
+Không có Zalo    1
+Name: count, dtype: int64
+2025-09-16 17:35:39,225 - INFO - Đã đóng trình duyệt
+2025-09-16 17:39:57,809 - INFO - Đã đọc 4 số từ file
+2025-09-16 17:39:59,086 - INFO - Đang chờ đăng nhập...
+2025-09-16 17:40:09,276 - WARNING - Có vẻ như chưa đăng nhập thành công
+2025-09-16 17:40:35,523 - INFO - Đang kiểm tra số: 0397364664
+2025-09-16 17:40:38,190 - INFO - Kết quả: 0397364664 - Không có Zalo
+2025-09-16 17:40:38,190 - INFO - Đang kiểm tra số: 0347441103
+2025-09-16 17:40:40,915 - INFO - Kết quả: 0347441103 - Không có Zalo
+2025-09-16 17:40:40,916 - INFO - Đang kiểm tra số: 0999978742
+2025-09-16 17:40:43,545 - INFO - Kết quả: 0999978742 - Không có Zalo
+2025-09-16 17:40:43,545 - INFO - Đang kiểm tra số: 0978786641
+2025-09-16 17:40:46,176 - INFO - Kết quả: 0978786641 - Không có Zalo
+2025-09-16 17:40:46,183 - INFO - 
+=== HOÀN TẤT ===
+2025-09-16 17:40:46,184 - INFO - Thời gian: 10.7 giây
+2025-09-16 17:40:46,184 - INFO - Tốc độ: 22.5 số/phút
+2025-09-16 17:40:46,186 - INFO - Thống kê:
+status
+Không có Zalo    4
+Name: count, dtype: int64
+2025-09-16 17:40:48,337 - INFO - Đã đóng trình duyệt
+2025-09-16 17:40:51,110 - INFO - Đã đọc 4 số từ file
+2025-09-16 17:40:52,708 - INFO - Đang chờ đăng nhập...
+2025-09-16 17:41:02,927 - WARNING - Có vẻ như chưa đăng nhập thành công
+2025-09-16 17:41:12,393 - INFO - Đang kiểm tra số: 0397364664
+2025-09-16 17:41:15,051 - INFO - Kết quả: 0397364664 - Không có Zalo
+2025-09-16 17:41:15,051 - INFO - Đang kiểm tra số: 0347441103
+2025-09-16 17:41:17,696 - INFO - Kết quả: 0347441103 - Không có Zalo
+2025-09-16 17:41:17,697 - INFO - Đang kiểm tra số: 0999978742
+2025-09-16 17:41:20,341 - INFO - Kết quả: 0999978742 - Không có Zalo
+2025-09-16 17:41:20,341 - INFO - Đang kiểm tra số: 0978786641
+2025-09-16 17:41:22,993 - INFO - Kết quả: 0978786641 - Không có Zalo
+2025-09-16 17:41:22,999 - INFO - 
+=== HOÀN TẤT ===
+2025-09-16 17:41:22,999 - INFO - Thời gian: 10.6 giây
+2025-09-16 17:41:23,000 - INFO - Tốc độ: 22.6 số/phút
+2025-09-16 17:41:23,000 - INFO - Thống kê:
+status
+Không có Zalo    4
+Name: count, dtype: int64
+2025-09-16 17:41:25,134 - INFO - Đã đóng trình duyệt
+2025-09-16 17:45:03,318 - INFO - Đã đọc 4 số từ file
+2025-09-16 17:45:04,564 - INFO - Đang chờ đăng nhập...
+2025-09-16 17:45:19,577 - WARNING - Có vẻ như chưa đăng nhập thành công
+2025-09-16 17:45:30,312 - INFO - Đang kiểm tra số: 0397364664
+2025-09-16 17:45:37,872 - INFO - Tìm thấy tên: Nguyễn Lê Tấn Đạt
+2025-09-16 17:45:37,872 - INFO - Kết quả: 0397364664 - Có Zalo
+2025-09-16 17:45:39,686 - INFO - Đang kiểm tra số: 0347441103
+2025-09-16 17:45:40,739 - WARNING - Không thể click [data-id='btn_Main_AddFrd']: Message: element click intercepted: Element <div icon="outline-add-new-contact-2" data-id="btn_Main_AddFrd" class="z--btn--v2 btn-tertiary-neutral medium  --rounded icon-only" data-disabled="" data-translate-title="STR_CONTACT_ADD_FRIEND" title="Thêm bạn">...</div> is not clickable at point (340, 64). Other element would receive the click: <div id="" class="zl-modal__container flx-1 flx flx-center flx-al-c ovf-hidden">...</div>
+  (Session info: chrome=140.0.7339.82); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff632eefc95+79861]
+	GetHandleVerifier [0x0x7ff632eefcf0+79952]
+	(No symbol) [0x0x7ff632c6cada]
+	(No symbol) [0x0x7ff632ccc5d9]
+	(No symbol) [0x0x7ff632cc9f5e]
+	(No symbol) [0x0x7ff632cc6eb1]
+	(No symbol) [0x0x7ff632cc5da0]
+	(No symbol) [0x0x7ff632cb7338]
+	(No symbol) [0x0x7ff632cecada]
+	(No symbol) [0x0x7ff632cb6bc6]
+	(No symbol) [0x0x7ff632ceccf0]
+	(No symbol) [0x0x7ff632d14f8b]
+	(No symbol) [0x0x7ff632cec8b3]
+	(No symbol) [0x0x7ff632cb5272]
+	(No symbol) [0x0x7ff632cb6043]
+	GetHandleVerifier [0x0x7ff6331ab9cd+2946349]
+	GetHandleVerifier [0x0x7ff6331a5c4a+2922410]
+	GetHandleVerifier [0x0x7ff6331c59d7+3052855]
+	GetHandleVerifier [0x0x7ff632f0aa7e+189918]
+	GetHandleVerifier [0x0x7ff632f12a1f+222591]
+	GetHandleVerifier [0x0x7ff632ef8ab4+116244]
+	GetHandleVerifier [0x0x7ff632ef8c69+116681]
+	GetHandleVerifier [0x0x7ff632edf048+11176]
+	BaseThreadInitThunk [0x0x7ffa01d37374+20]
+	RtlUserThreadStart [0x0x7ffa01e7cc91+33]
+
+2025-09-16 17:45:42,131 - INFO - Đang kiểm tra số: 0999978742
+2025-09-16 17:45:49,692 - INFO - Tìm thấy tên: HỘI ĂN KIÊNG - LQĐ
+2025-09-16 17:45:49,692 - INFO - Kết quả: 0999978742 - Có Zalo
+2025-09-16 17:45:51,120 - INFO - Đang kiểm tra số: 0978786641
+2025-09-16 17:45:52,165 - WARNING - Không thể click [data-id='btn_Main_AddFrd']: Message: element click intercepted: Element <div icon="outline-add-new-contact-2" data-id="btn_Main_AddFrd" class="z--btn--v2 btn-tertiary-neutral medium  --rounded icon-only" data-disabled="" data-translate-title="STR_CONTACT_ADD_FRIEND" title="Thêm bạn">...</div> is not clickable at point (340, 64). Other element would receive the click: <div id="" class="zl-modal__container flx-1 flx flx-center flx-al-c ovf-hidden">...</div>
+  (Session info: chrome=140.0.7339.82); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff632eefc95+79861]
+	GetHandleVerifier [0x0x7ff632eefcf0+79952]
+	(No symbol) [0x0x7ff632c6cada]
+	(No symbol) [0x0x7ff632ccc5d9]
+	(No symbol) [0x0x7ff632cc9f5e]
+	(No symbol) [0x0x7ff632cc6eb1]
+	(No symbol) [0x0x7ff632cc5da0]
+	(No symbol) [0x0x7ff632cb7338]
+	(No symbol) [0x0x7ff632cecada]
+	(No symbol) [0x0x7ff632cb6bc6]
+	(No symbol) [0x0x7ff632ceccf0]
+	(No symbol) [0x0x7ff632d14f8b]
+	(No symbol) [0x0x7ff632cec8b3]
+	(No symbol) [0x0x7ff632cb5272]
+	(No symbol) [0x0x7ff632cb6043]
+	GetHandleVerifier [0x0x7ff6331ab9cd+2946349]
+	GetHandleVerifier [0x0x7ff6331a5c4a+2922410]
+	GetHandleVerifier [0x0x7ff6331c59d7+3052855]
+	GetHandleVerifier [0x0x7ff632f0aa7e+189918]
+	GetHandleVerifier [0x0x7ff632f12a1f+222591]
+	GetHandleVerifier [0x0x7ff632ef8ab4+116244]
+	GetHandleVerifier [0x0x7ff632ef8c69+116681]
+	GetHandleVerifier [0x0x7ff632edf048+11176]
+	BaseThreadInitThunk [0x0x7ffa01d37374+20]
+	RtlUserThreadStart [0x0x7ffa01e7cc91+33]
+
+2025-09-16 17:45:53,787 - INFO - Đã lưu kết quả vào zalo_results_final.csv
+2025-09-16 17:45:53,788 - INFO - 
+=== THỐNG KÊ CHI TIẾT ===
+2025-09-16 17:45:53,788 - INFO - Tổng số: 4
+2025-09-16 17:45:53,789 - INFO - Có Zalo: 2 (50.0%)
+2025-09-16 17:45:53,789 - INFO - Error: 2 (50.0%)
+2025-09-16 17:45:55,918 - INFO - Đã đóng trình duyệt
+2025-09-16 17:46:40,894 - INFO - Đã đọc 4 số từ file
+2025-09-16 17:46:42,106 - INFO - Đang chờ đăng nhập...
+2025-09-16 17:46:44,188 - ERROR - Lỗi khi đăng nhập: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2025-09-16 17:46:45,454 - INFO - Đã dừng bởi người dùng
+2025-09-16 17:46:57,722 - INFO - Đã đọc 4 số từ file
+2025-09-16 17:46:58,903 - INFO - Đang chờ đăng nhập...
+2025-09-16 17:47:02,342 - ERROR - Lỗi khi đăng nhập: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=140.0.7339.82)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff632eefc95+79861]
+	GetHandleVerifier [0x0x7ff632eefcf0+79952]
+	(No symbol) [0x0x7ff632c6cada]
+	(No symbol) [0x0x7ff632c44b91]
+	(No symbol) [0x0x7ff632cf40fe]
+	(No symbol) [0x0x7ff632d148c2]
+	(No symbol) [0x0x7ff632cec8b3]
+	(No symbol) [0x0x7ff632cb5272]
+	(No symbol) [0x0x7ff632cb6043]
+	GetHandleVerifier [0x0x7ff6331ab9cd+2946349]
+	GetHandleVerifier [0x0x7ff6331a5c4a+2922410]
+	GetHandleVerifier [0x0x7ff6331c59d7+3052855]
+	GetHandleVerifier [0x0x7ff632f0aa7e+189918]
+	GetHandleVerifier [0x0x7ff632f12a1f+222591]
+	GetHandleVerifier [0x0x7ff632ef8ab4+116244]
+	GetHandleVerifier [0x0x7ff632ef8c69+116681]
+	GetHandleVerifier [0x0x7ff632edf048+11176]
+	BaseThreadInitThunk [0x0x7ffa01d37374+20]
+	RtlUserThreadStart [0x0x7ffa01e7cc91+33]
+
+2025-09-16 17:50:41,942 - INFO - Đã dừng bởi người dùng
+2025-09-16 17:50:41,945 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)': /session/2bce905feb0a27e261f790c6b8a63c04
+2025-09-16 17:53:06,700 - INFO - Đã đọc 4 số từ file
+2025-09-16 17:53:07,893 - INFO - Đang chờ đăng nhập...
+2025-09-16 17:53:23,355 - WARNING - Có vẻ như chưa đăng nhập thành công
+2025-09-16 17:53:29,216 - INFO - Đang kiểm tra số: 0397364664
+2025-09-16 17:53:30,762 - INFO - Modal thông tin tài khoản đã xuất hiện - Số CÓ Zalo
+2025-09-16 17:53:30,802 - INFO - Kết quả: 0397364664 - Có Zalo
+2025-09-16 17:53:31,176 - INFO - Đã đóng modal thông tin tài khoản
+2025-09-16 17:53:31,874 - INFO - Đang kiểm tra số: 0347441103
+2025-09-16 17:53:33,717 - INFO - Modal thông tin tài khoản đã xuất hiện - Số CÓ Zalo
+2025-09-16 17:53:33,730 - INFO - Kết quả: 0347441103 - Có Zalo
+2025-09-16 17:53:34,228 - INFO - Đã đóng modal thông tin tài khoản
+2025-09-16 17:53:34,920 - INFO - Đang kiểm tra số: 0999978742
+2025-09-16 17:53:36,434 - INFO - Modal thông tin tài khoản đã xuất hiện - Số CÓ Zalo
+2025-09-16 17:53:36,449 - INFO - Kết quả: 0999978742 - Có Zalo
+2025-09-16 17:53:36,932 - INFO - Đã đóng modal thông tin tài khoản
+2025-09-16 17:53:37,710 - INFO - Đang kiểm tra số: 0978786641
+2025-09-16 17:53:39,128 - INFO - Modal thông tin tài khoản đã xuất hiện - Số CÓ Zalo
+2025-09-16 17:53:39,142 - INFO - Kết quả: 0978786641 - Có Zalo
+2025-09-16 17:53:39,580 - INFO - Đã đóng modal thông tin tài khoản
+2025-09-16 17:53:40,325 - INFO - Đã lưu kết quả vào zalo_results_final.csv
+2025-09-16 17:53:40,327 - INFO - 
+=== HOÀN TẤT ===
+2025-09-16 17:53:40,327 - INFO - Thời gian: 11.1 giây
+2025-09-16 17:53:40,327 - INFO - Tốc độ: 21.6 số/phút
+2025-09-16 17:53:40,327 - INFO - Thống kê:
+2025-09-16 17:53:40,328 - INFO -   Có Zalo: 4 (100.0%)
+2025-09-16 17:53:42,461 - INFO - Đã đóng trình duyệt
