@@ -29,7 +29,7 @@ try:
 except Exception:
     # fallback: maybe the user kept the code in the same file name 'zalo_checker.py'
     try:
-        from zalo_checker import ZaloChecker
+        from zalo_checker_module import ZaloChecker
     except Exception:
         ZaloChecker = None
 
@@ -85,7 +85,7 @@ class App(tk.Tk):
         main_container.rowconfigure(4, weight=3)
 
         # Title
-        title_label = ttk.Label(main_container, text="Zalo Phone Number Checker", 
+        title_label = ttk.Label(main_container, text="Check Zalo Number Tool - Lam Quang Dai Company", 
                                font=("Arial", 16, "bold"), foreground="#2c3e50")
         title_label.grid(row=0, column=0, columnspan=2, pady=(0, 15), sticky=tk.W)
 
@@ -323,6 +323,7 @@ class App(tk.Tk):
         self.btn_stop.config(state=tk.DISABLED)
         self.progress.stop()
 
+    # Trong class App của file UI, cập nhật phương thức _worker
     def _worker(self, phone_numbers, batch_size):
         try:
             total = len(phone_numbers)
@@ -331,7 +332,8 @@ class App(tk.Tk):
                     self.worker_queue.put(("log", "Đã yêu cầu dừng - thoát worker"))
                     break
 
-                res = self.checker.check_phone_number(str(phone).strip())
+                # Sử dụng phương pháp URL trực tiếp thay vì phương pháp cũ
+                res = self.checker.check_phone_number_direct_url(str(phone).strip())
                 self.results.append(res)
                 self.worker_queue.put(("result", res))
                 self.worker_queue.put(("progress", (idx, total)))
